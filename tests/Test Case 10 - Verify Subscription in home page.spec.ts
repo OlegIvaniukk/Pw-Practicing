@@ -1,8 +1,6 @@
 import { test, expect } from './fixtures/baseFixtures';
 
 test('Verify Subscription', async ({ validatedPage }) => {
-  await validatedPage.goto('http://automationexercise.com');
-  await expect(validatedPage).toHaveTitle(/Automation Exercise/);
   await validatedPage.locator('#footer').scrollIntoViewIfNeeded();
   await expect(validatedPage.locator('#footer')).toBeVisible();
   await expect(validatedPage.getByRole('heading', { name: 'SUBSCRIPTION' })).toBeVisible();

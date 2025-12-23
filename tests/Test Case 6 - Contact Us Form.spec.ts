@@ -1,8 +1,7 @@
 import { test, expect } from './fixtures/baseFixtures';
 
 test('Contact Us Form Submission', async ({ validatedPage }) => {
-  await validatedPage.goto('http://automationexercise.com');
-  await expect(validatedPage).toHaveTitle(/Automation Exercise/);
+
   await validatedPage.locator('a[href="/contact_us"]').click();
   await expect(validatedPage.getByRole('heading', { name: 'Get In Touch' })).toBeVisible();
   await validatedPage.locator('[data-qa="name"]').fill('TestName');

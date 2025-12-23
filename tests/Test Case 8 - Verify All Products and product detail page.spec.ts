@@ -1,9 +1,7 @@
 import { test, expect } from './fixtures/baseFixtures';
 
 test('Product details', async ({ validatedPage }) => {
-  await validatedPage.goto('http://automationexercise.com');
-  await expect(validatedPage).toHaveTitle(/Automation Exercise/);
-  await validatedPage.locator('a[href="/products"]').click();
+   await validatedPage.locator('a[href="/products"]').click();
   await expect(validatedPage).toHaveURL('https://automationexercise.com/products');
   await expect(validatedPage.getByRole('heading', { name: 'All Products' })).toBeVisible();
   await validatedPage.locator('a[href="/product_details/1"]').first().click();

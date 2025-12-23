@@ -5,8 +5,6 @@ test('Logout action', async ({ validatedPage }) => {
   const userPassword = '123'; // Replace with a valid registered password
   const userName = 'Oleg'; // Replace with a valid registered username
 
-  await validatedPage.goto('http://automationexercise.com');
-  await expect(validatedPage).toHaveTitle(/Automation Exercise/);
   await validatedPage.locator('a[href="/login"]').click();
   await expect(validatedPage.locator('h2:has-text("Login to your account")')).toBeVisible();
   await validatedPage.locator('[data-qa="login-email"]').fill(userEmail);

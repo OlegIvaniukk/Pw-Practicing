@@ -3,10 +3,7 @@ import { test, expect } from './fixtures/baseFixtures';
 test('Reg with existing email', async ({ validatedPage }) => {
   const userEmail = 'olegivaniuk123@gmail.com'; // Replace with a valid registered email
   // const userName = "Oleg"; // Replace with a valid registered username
-
-  await validatedPage.goto('http://automationexercise.com');
-  await expect(validatedPage).toHaveTitle(/Automation Exercise/);
-  await validatedPage.locator('a[href="/login"]').click();
+    await validatedPage.locator('a[href="/login"]').click();
   await expect(validatedPage.locator('h2:has-text("New User Signup!")')).toBeVisible();
   await validatedPage.locator('[data-qa="signup-email"]').fill(userEmail);
   await validatedPage.locator('[data-qa="signup-name"]').fill('AnyName');
