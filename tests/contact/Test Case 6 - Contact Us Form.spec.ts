@@ -1,4 +1,4 @@
-import { test, expect } from './fixtures/baseFixtures';
+import { test, expect } from '../fixtures/baseFixtures';
 
 test('Contact Us Form Submission', async ({ validatedPage }) => {
 

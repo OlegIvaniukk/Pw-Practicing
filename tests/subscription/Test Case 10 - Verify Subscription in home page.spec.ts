@@ -1,4 +1,4 @@
-import { test, expect } from './fixtures/baseFixtures';
+import { test, expect } from '../fixtures/baseFixtures';
 
 test('Verify Subscription', async ({ validatedPage }) => {
   await validatedPage.locator('#footer').scrollIntoViewIfNeeded();

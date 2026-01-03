@@ -1,4 +1,4 @@
-import { test, expect } from "./fixtures/baseFixtures";
+import { test, expect } from "../fixtures/baseFixtures";
 
 test("Search Products and Verify Cart After Login", async ({
   validatedPage,

@@ -1,4 +1,4 @@
-import { test, expect } from "./fixtures/baseFixtures";
+import { test, expect } from "../fixtures/baseFixtures";
 
 test("View Category Products", async ({ validatedPage }) => {
   await expect(validatedPage.locator("#accordian")).toBeVisible();

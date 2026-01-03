@@ -1,4 +1,4 @@
-import { test, expect } from './fixtures/baseFixtures';
+import { test, expect } from '../fixtures/baseFixtures';
 
 test('Prod search', async ({ validatedPage }) => {
   await validatedPage.locator('a[href="/products"]').click();

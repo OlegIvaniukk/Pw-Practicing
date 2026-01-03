@@ -1,4 +1,4 @@
-import { test, expect } from "./fixtures/baseFixtures";
+import { test, expect } from "../fixtures/baseFixtures";
 
 test("Verify Chart page", async ({ validatedPage }) => {
   await validatedPage.getByRole("link", { name: " Cart" }).click();

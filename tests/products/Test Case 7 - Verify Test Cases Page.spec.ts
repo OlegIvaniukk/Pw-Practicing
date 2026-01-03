@@ -1,4 +1,4 @@
-import { test, expect } from './fixtures/baseFixtures';
+import { test, expect } from '../fixtures/baseFixtures';
 
 test('TC page verification', async ({ validatedPage }) => {
   await validatedPage.getByRole('button', { name: 'Test Cases' }).click();

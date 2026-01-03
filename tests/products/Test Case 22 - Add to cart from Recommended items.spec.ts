@@ -1,4 +1,4 @@
-import {test, expect} from "./fixtures/baseFixtures";
+import {test, expect} from "../fixtures/baseFixtures";
 
 test('Add to cart from Recommended items', async ({validatedPage}) => {
     await validatedPage.locator('.recommended_items').scrollIntoViewIfNeeded();

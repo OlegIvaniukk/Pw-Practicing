@@ -1,4 +1,4 @@
-import { test, expect } from "./fixtures/baseFixtures";
+import { test, expect } from "../fixtures/baseFixtures";
 
 test("Remove Products From Cart", async ({ validatedPage }) => {
   const firstProduct = validatedPage.locator(".single-products").first();

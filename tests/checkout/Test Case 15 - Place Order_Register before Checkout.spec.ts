@@ -1,4 +1,4 @@
-import { test, expect } from "./fixtures/baseFixtures";
+import { test, expect } from "../fixtures/baseFixtures";
 
 test("Place Order Register before Checkout", async ({ validatedPage }) => {
   await validatedPage.getByRole("link", { name: "  Signup / Login" }).click();

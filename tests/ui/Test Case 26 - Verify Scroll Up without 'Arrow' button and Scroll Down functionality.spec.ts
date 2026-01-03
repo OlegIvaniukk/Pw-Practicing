@@ -1,4 +1,4 @@
-import {test, expect} from "./fixtures/baseFixtures";
+import {test, expect} from "../fixtures/baseFixtures";
 
 test('Verify Scroll Up without \'Arrow\' button and Scroll Down functionality', async ({validatedPage}) => {
     await validatedPage.locator('footer').scrollIntoViewIfNeeded();

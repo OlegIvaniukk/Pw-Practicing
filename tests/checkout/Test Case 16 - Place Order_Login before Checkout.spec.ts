@@ -1,4 +1,4 @@
-import { test, expect } from "./fixtures/baseFixtures";
+import { test, expect } from "../fixtures/baseFixtures";
 
 test("Place Order Register before Checkout", async ({ validatedPage }) => {
   const userEmail = "olegivaniuk123@gmail.com"; // Replace with a valid registered email

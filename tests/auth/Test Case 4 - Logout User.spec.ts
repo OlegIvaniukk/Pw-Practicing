@@ -1,4 +1,4 @@
-import { test, expect } from './fixtures/baseFixtures';
+import { test, expect } from '../fixtures/baseFixtures';
 
 test('Logout action', async ({ validatedPage }) => {
   const userEmail = 'olegivaniuk123@gmail.com'; // Replace with a valid registered email

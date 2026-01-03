@@ -1,4 +1,4 @@
-import { test, expect } from './fixtures/baseFixtures';
+import { test, expect } from '../fixtures/baseFixtures';
 
 test('has title', async ({ validatedPage }) => {
   const randomInt = Math.floor(Math.random() * 1000);

@@ -1,4 +1,4 @@
-import {test, expect} from "./fixtures/baseFixtures";
+import {test, expect} from "../fixtures/baseFixtures";
 
 test('Add review on product', async ({validatedPage}) => {
     await validatedPage.getByRole('link', {name: ' Products'}).click();

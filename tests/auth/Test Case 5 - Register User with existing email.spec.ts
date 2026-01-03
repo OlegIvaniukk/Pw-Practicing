@@ -1,4 +1,4 @@
-import { test, expect } from './fixtures/baseFixtures';
+import { test, expect } from '../fixtures/baseFixtures';
 
 test('Reg with existing email', async ({ validatedPage }) => {
   const userEmail = 'olegivaniuk123@gmail.com'; // Replace with a valid registered email
